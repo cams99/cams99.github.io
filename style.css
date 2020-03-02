@@ -1,0 +1,151 @@
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.link { text-decoration: none; }
+h4.w3-text-grey.w3-padding-16 { text-align: center; }
+.div-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+a {
+	text-decoration: none;
+}
+.cv {
+  position: relative;
+  padding-bottom: 50px;
+}
+.cv > a {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 20px;
+  background-color: #757575;
+  padding: 5px 10px;
+  border-radius: 10px;
+  color: #FFF;
+  transition: all .3s;
+}
+.cv > a:hover {
+  background: #2095f3;
+}
+.icono-social { 
+  margin-right: 30px; 
+  font-size: 30px; 
+  color: #757575;
+  transition: all .3s;
+}
+.icono-social:last-child { margin: 0; }
+.w3-text-teal, .w3-hover-text-teal:hover, .icono-social:hover {
+  color: #2196F3 !important;
+}
+.w3-teal, .w3-hover-teal:hover {
+  background-color: #2196F3 !important; 
+}
+.w3-margin-right {
+  margin-right: 10px!important;
+}
+.proyectos h2 {
+  padding-bottom: 5px !important;
+}
+.w3-opacity {
+  transition: all .3s;
+}
+.proyectos .w3-button {
+  display: none;
+  background: #2196F3 !important;
+  color: #FFF !important;
+  border: 2px solid #2095f3;
+  border-radius: 10px;
+  padding: 5px 10px !important;
+  transition: all .3s;
+}
+.proyectos .w3-button:focus {
+  outline: unset !important;
+}
+.hover-proyecto {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  background: #00000090;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;  
+  opacity: 0;
+  transition: all .3s;
+}
+.mobile-proyecto {
+  display: none;
+}
+.hover-proyecto a {
+  text-decoration: none;
+  border: 1px solid #FFF;
+  color: #FFF;
+  border-radius: 10px;
+  padding: 5px 10px;
+  transition: all .3s;
+}
+.hover-proyecto a:hover {
+  background: #000;
+}
+.hover-proyecto a:first-child {
+  margin-right: 20px;
+}
+.mySlides:hover .hover-proyecto {
+  opacity: 1;
+}
+.mySlides a i {
+  margin-right: 5px;
+}
+img.demo {
+  height: 60px;
+}
+.proyectos .w3-row-padding.w3-section {
+  display: flex; 
+  justify-content: space-around;
+  align-items: center;
+}
+.preview {
+  position: relative;
+}
+@media (max-width: 600px) {
+  .proyectos .w3-button {
+    display: block;
+  }
+  .proyectos .w3-row-padding.w3-section {
+    justify-content: center;
+  }
+  .proyectos .w3-button:nth-child(6) {
+    margin-right: 20px;
+  }
+  .proyectos .w3-col.s2 {
+    display: none;
+  }
+  .hover-proyecto {
+    display: none
+  }
+  .mobile-proyecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mobile-proyecto a {
+    text-decoration: none;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin-top: 15px;
+    transition: all .3s;
+  }
+  .mobile-proyecto a:first-child {
+    margin-right: 20px;
+  }
+  .mobile-proyecto a.solo {
+    margin-right: 0; 
+  }
+  .mobile-proyecto a:hover {
+    background: black;
+    color: #FFF;
+  }
+}
